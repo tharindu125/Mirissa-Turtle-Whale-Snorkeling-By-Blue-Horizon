@@ -164,7 +164,7 @@ h6 {
 }
 
 .header .logo h1 {
-  font-size: 24px;
+  font-size: 22px;
   margin: 0;
   font-weight: 500;
   letter-spacing: 0.5px;
@@ -613,7 +613,7 @@ h6 {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
+  left: 15px;
   bottom: -15px;
   z-index: 99999;
   background-color: var(--accent-color);
@@ -1192,6 +1192,8 @@ section,
   flex-wrap: wrap;
   margin-top: 30px;
   background-color: color-mix(in srgb, var(--background-color), var(--heading-color) 3%);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(173, 206, 255, 0.2);
   padding: 30px 20px;
   border-radius: 10px;
 }
@@ -1244,7 +1246,9 @@ section,
   font-weight: 500;
   cursor: pointer;
   border-radius: 25px;
-  background-color: var(--surface-color);
+  background: rgba(0, 195, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: var(--default-color);
   transition: 0.3s;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
@@ -1384,7 +1388,9 @@ section,
 .menu .menu-item {
   padding: 20px;
   border-radius: 8px;
-  background-color: var(--surface-color);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
 }
@@ -1395,8 +1401,8 @@ section,
 }
 
 .menu .menu-item .menu-img {
-  width: 100px;
-  height: 100px;
+  width: 300px;
+  height: 200px;
   object-fit: cover;
   border-radius: 8px;
   transition: transform 0.3s;
@@ -1491,7 +1497,10 @@ section,
 # Testimonials Section
 --------------------------------------------------------------*/
 .testimonials .testimonial-item {
-  background-color: var(--surface-color);
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0px 0 20px rgba(0, 0, 0, 0.1);
   box-sizing: content-box;
   padding: 30px;
@@ -1500,7 +1509,13 @@ section,
   display: flex;
   flex-direction: column;
   text-align: center;
-  transition: 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.testimonials .testimonial-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
 .testimonials .testimonial-item .stars {
@@ -2108,7 +2123,7 @@ section,
 }
 
 .events .intro-text h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   font-weight: 700;
   position: relative;
@@ -2136,11 +2151,13 @@ section,
 }
 
 .events .event-types .event-type-card {
-  background-color: var(--surface-color);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 12px;
   padding: 2.5rem 1.5rem;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   height: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -2180,7 +2197,7 @@ section,
 
 .events .event-types .event-type-card .capacity {
   display: inline-block;
-  background-color: color-mix(in srgb, var(--heading-color), transparent 90%);
+  background-color: color-mix(in srgb, var(--accent-color), transparent 50%);
   color: var(--heading-color);
   padding: 6px 16px;
   border-radius: 30px;
@@ -2235,6 +2252,8 @@ section,
 
 .events .event-cta {
   background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(194, 255, 177, 0.2);
   border-radius: 12px;
   padding: 2.5rem;
   margin-bottom: 4rem;
@@ -2819,4 +2838,18 @@ section,
   font-size: 40px;
   color: #0d6efd;
   margin-bottom: 15px;
+}
+
+.contact .glass {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 25px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* min-height: 180px; */
+}
+.contact .glass:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
