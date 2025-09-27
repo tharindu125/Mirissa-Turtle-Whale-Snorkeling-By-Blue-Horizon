@@ -2866,3 +2866,67 @@ section,
   transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
+
+/* WhatsApp Button Styling */
+.whatsapp-button {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1000; /* Ensure it's on top of other content */
+  text-decoration: none; /* Remove underline */
+}
+
+.whatsapp-button img {
+  width: 50px; /* Adjust this for size */
+  height: 50px; /* Ensures uniform scaling */
+  transition: transform 0.2s ease-in-out; /* Smooth scaling effect on hover */
+}
+
+.whatsapp-button img:hover {
+  transform: scale(1.1); /* Slightly larger on hover */
+}
+
+/* Glass effect for modal content */
+.glass-modal {
+  background: rgba(194, 255, 161, 0.15); /* Transparent white */
+  backdrop-filter: blur(15px) saturate(150%);
+  -webkit-backdrop-filter: blur(15px) saturate(150%);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  color: #fff; /* Text in white for contrast */
+}
+
+.glass-modal .modal-header,
+.glass-modal .modal-body {
+  background: transparent;
+  border: none;
+}
+
+.glass-modal .modal-title {
+  font-weight: bold;
+}
+
+.glass-modal ul li {
+  color: #f1f1f1;
+}
+
+/* Modal backdrop (overlay) */
+.modal-backdrop.show {
+  background: rgba(0, 0, 0, 0.7) !important; /* Darker overlay */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.glass-modal .btn-close {
+  filter: invert(1) brightness(200%); /* makes the close icon white */
+  opacity: 0.9;
+}
+
+.glass-modal .btn-close:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
