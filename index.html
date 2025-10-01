@@ -180,36 +180,77 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero d-flex align-items-center">
-      <div class="container text-center" data-aos="fade-up">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-        <div class="status-badge">Tours Available Now</div>
-
-        <h1>Mirissa Turtle Snorkeling & Fishing Club</h1>
-
-        <!-- Rotating Text -->
-        <h3 class="rotating-text">
-          <span>Turtle Snorkeling</span>
-          <span>Whale Snorkeling</span>
-          <span>Scuba Diving</span>
-          <span>Fishing Tours</span>
-        </h3>
-
-        <p>Discover the magic of the ocean in Mirissa with unforgettable adventures above and below the waves.</p>
-
-        <div class="btn-group mt-4">
-          <a href="https://wa.me/94715264427?text=Hello%20I%20would%20like%20to%20inquire%20about%20your%20services"
-            class="btn btn-book">Book a Tour</a>
-          <a href="#packages" class="btn btn-menu">Explore Activities</a>
-        </div>
-
-        <div class="social-links mt-4">
-          <a href="#"><i class="bi bi-facebook"></i></a>
-          <a href="#"><i class="bi bi-instagram"></i></a>
-          <a href="#"><i class="bi bi-youtube"></i></a>
-        </div>
+      <!-- Indicators (dots) -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
       </div>
-    </section>
+
+      <div class="carousel-inner">
+
+        <!-- Turtle Snorkeling -->
+        <div class="carousel-item active" style="background-image: url('assets/img/snorkeling/turtle_snorkeling.jpg');">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-caption text-center">
+            <span class="badge bg-info text-dark">TOURS AVAILABLE NOW</span>
+            <h5 class="mt-3">Turtle Snorkeling Tours</h5>
+            <p>Swim alongside gentle sea turtles in the crystal-clear waters of Mirissa.</p>
+            <a href="#" class="btn btn-info btn-custom">Book a Tour</a>
+            <a href="#" class="btn btn-outline-light btn-custom">Explore Activities</a>
+          </div>
+        </div>
+
+        <!-- Scuba Diving -->
+        <div class="carousel-item" style="background-image: url('assets/img/snorkeling/Scuba_Diving_Image1_in_Mirissa_Turtle_Snorkeling_&_Fishing_Club.jpg');">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-caption text-center">
+            <span class="badge bg-info text-dark">TOURS AVAILABLE NOW</span>
+            <h5 class="mt-3">Scuba Diving Tours</h5>
+            <p>Discover the magic of the ocean with unforgettable adventures below the waves.</p>
+            <a href="#" class="btn btn-info btn-custom">Book a Tour</a>
+            <a href="#" class="btn btn-outline-light btn-custom">Explore Activities</a>
+          </div>
+        </div>
+
+        <!-- Fishing Tours -->
+        <div class="carousel-item" style="background-image: url('assets/img/snorkeling/Deep_See_Fishing_Image1_in_Mirissa_Turtle_Snorkeling_&_Fishing_Club.jpg');">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-caption text-center">
+            <span class="badge bg-info text-dark">TOURS AVAILABLE NOW</span>
+            <h5 class="mt-3">Fishing Tours</h5>
+            <p>Experience the thrill of deep-sea fishing with local experts in Mirissa.</p>
+            <a href="#" class="btn btn-info btn-custom">Book a Tour</a>
+            <a href="#" class="btn btn-outline-light btn-custom">Explore Activities</a>
+          </div>
+        </div>
+
+        <!-- Whale Watching -->
+        <div class="carousel-item" style="background-image: url('assets/img/snorkeling/Boat_Tours_Image1_in_Mirissa_Turtle_Snorkeling_&_Fishing_Club.jpg');">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-caption text-center">
+            <span class="badge bg-info text-dark">TOURS AVAILABLE NOW</span>
+            <h5 class="mt-3">Whale Watching Tours</h5>
+            <p>Witness the giants of the ocean in their natural habitat.</p>
+            <a href="#" class="btn btn-info btn-custom">Book a Tour</a>
+            <a href="#" class="btn btn-outline-light btn-custom">Explore Activities</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
 
     <!-- About Section -->
     <section id="about" class="about section">
